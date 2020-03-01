@@ -1,0 +1,134 @@
+:root {
+    --hr: rgba(24, 14, 167, 0.76);
+}
+
+body{
+    background-image: url('http://via.placeholder.com/1000x600.png'), linear-gradient(to bottom,#444444, #000000);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#header{
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: lighter;
+    margin-top:40%;
+    padding: 20px;
+}
+
+#header .title {
+    font-size: 2em;
+}
+
+#header .authors a{
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+}
+
+#header img {
+    width:30%;
+    max-width: 200px;
+}
+
+#hero-img {
+    width:100%;
+}
+
+.pad-right {
+    padding-right: 20px;
+}
+
+#content {
+    background-color: white;
+    margin-top: 20px;
+    font-family: 'Open Sans';
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#content blockquote{
+    border-left: 5px solid #eee;
+    padding: 10px 0px 5px 20px;
+
+    font-size: 1.3em;
+}
+
+#teaser img {
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.content-section {
+    margin-bottom: 4em;
+    
+}
+
+.content-section h1 {
+    font-size: 2em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--hr);
+    margin-bottom: 1em;
+}
+.content-section h2{
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.figure{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.contact-author-name{
+    color: rgba(24, 14, 167, 0.76);
+}
+
+.download-link{
+    background-color: var(--hr);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    float: right;
+    text-decoration: none;
+}
+
+.download-link:hover{
+    color: var(--hr);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+ol {
+    list-style: none; 
+    counter-reset: li
+}
+
+ol li::before {
+    content: counter(li); 
+    color: grey;
+    display: inline-block; 
+    position: absolute;
+    font-size: x-large;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ol li {
+    counter-increment: li;
+    margin-bottom:1em;
+}
+hr {
+    border-color: var(--hr);
+}
+
+.copyright {
+    margin-top: 40px;
+    color:gray;
+    font-size: small;
+}
+
+.doi-url{
+    word-wrap: break-word;
+}
