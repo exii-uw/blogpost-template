@@ -3,6 +3,7 @@
 }
 
 body{
+    /* !!! Change the background-image property! */
     background-image: url('http://via.placeholder.com/1000x600.png'), linear-gradient(to bottom,#444444, #000000);
     background-position: top center;
     background-size: contain;
